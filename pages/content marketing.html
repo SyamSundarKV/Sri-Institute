@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Marketing</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="content marketing.png">
+</head>
+
+<style>
+    /* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    animation: fadeInDown 1.2s ease;
+}
+
+
+
+.register-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    animation: bounceIn 1.5s;
+}
+
+.roadmap-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  
+}
+
+.roadmap-section h2 {
+    font-weight: 700;
+    color: #6a11cb;
+    margin-bottom: 40px;
+    animation: fadeIn 1.2s;
+}
+
+.roadmap-card {
+    border: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border-radius: 20px;
+   
+}
+
+.roadmap-card:hover {
+    transform: translateY(-10px);
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--kappel);
+}
+  
+.nav__logo div {
+    width: 60px;
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center;
+    font-size: 35px;
+    line-height: 1rem;
+    color: blue;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2575fc;
+}
+
+.number div {
+    width: 30px;
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center;
+    font-size: 25px;
+    line-height: 1rem;
+    color: white;
+    background-color: #2575fc;
+    border-radius: 100%;
+}
+
+
+
+
+.roadmap-card .card-title {
+    color: #2575fc;
+    font-weight: bold;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    .register-btn {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+    from, 20%, 40%, 60%, 80%, to { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+</style>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="nav__logo">
+            <div>SRI</div>
+            Institution
+        </div>
+        <div class="container text-center">
+            <h1 class="display-4">Content Marketing Roadmap</h1>
+           <a href="#"><button class="btn btn-primary register-btn">Register for the Course</button></a> 
+        </div>
+    </header>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Key Concepts in Content Marketing</h2>
+            <div class="row">
+                <div class="col-lg-12 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Course Objective:</h5>
+                            <ul>
+                                <li><em>Gain a comprehensive understanding of content marketing strategies and tools.</em></li>
+                                <li><em>Learn to create and manage content that engages and converts your audience.</em></li>
+                                <li><em>Develop skills in SEO, social media marketing, content strategy, and quality content creation.</em></li>
+                                <li><em>Complete hands-on projects to build a professional portfolio.</em></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                            <p class="card-text"> 
+                                 <div class="number">
+                                    <div>1</div>
+                                    Introduction to Content Marketing:
+                                 </div>
+                            </p>
+                            </h5>
+                            <ul>
+                                <li>Overview of content marketing and its importance.</li>
+                                <li>Key concepts and terminology.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                            <p class="card-text">
+                                <div class="number">
+                                    <div>2</div>
+                                    Content Strategy:
+                                </div>    
+                            </p>
+                        </h5>
+                            <ul>
+                                <li>Developing a content marketing strategy.</li>
+                                <li>Identifying target audience and creating buyer personas.</li>
+                                <li>Planning and organizing content calendars.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                            <p class="card-text">
+                                <div class="number">
+                                    <div>3</div>
+                                    SEO and Content Optimization:
+                                </div>    
+                            </p>
+                        </h5>
+                            <ul>
+                                <li>Implementing SEO tactics to increase organic traffic.</li>
+                                <li>Keyword research and optimization.</li>
+                                <li>Writing compelling meta descriptions and headlines.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p class="card-text">
+                                    <div class="number">
+                                        <div>4</div>
+                                        Content Creation:
+                                    </div>    
+                                </p>
+                            </h5>
+                            <ul>
+                                <li>Writing high-quality blog posts, articles, and landing pages.</li>
+                                <li>Creating engaging visuals and multimedia content.</li>
+                                <li>Storytelling and brand voice.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p class="card-text">
+                                    <div class="number">
+                                        <div>5</div>
+                                        Social Media Marketing:
+                                    </div>    
+                                </p>
+                            </h5>
+                            <ul>
+                                <li>Using social media platforms to promote content.</li>
+                                <li>Creating and managing social media campaigns.</li>
+                                <li>Analyzing social media metrics and engagement.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                             <h5 class="card-title">
+                                <p class="card-text">
+                                    <div class="number">
+                                        <div>6</div>
+                                        Email Marketing: 
+                                    </div>    
+                                </p>
+                            </h5>
+                            <ul>
+                                <li>Building email lists and segments.</li>
+                                <li>Designing effective email campaigns.</li>
+                                <li>Tracking and analyzing email marketing metrics.</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p class="card-text">
+                                    <div class="number">
+                                        <div>7</div>
+                                        Analytics and Measurement:
+                                    </div>    
+                                </p>
+                            </h5>
+                            <ul>
+                                <li>Using tools like Google Analytics to track content performance.</li>
+                                <li>Measuring ROI and setting performance goals.</li>
+                                <li>Adjusting strategies based on data insights.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p class="card-text">
+                                    <div class="number">
+                                        <div>8</div>
+                                        Project Work:
+                                    </div>    
+                                </p>
+                            </h5>
+                            <ul>
+                                <li>Hands-on projects to apply learned concepts.</li>
+                                <li>Developing and executing a content marketing campaign.</li>
+                                <li>Creating a portfolio to showcase your work.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-12 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Skills You'll Gain:</h5>
+                            <ul>
+                                <li><em>Proficiency in content marketing strategies and tools.</em></li>
+                                <li><em>Ability to create and manage engaging content.</em></li>
+                                <li><em>Knowledge of SEO, social media marketing, and email marketing.</em></li>
+                                <li><em>Skills in analytics and data-driven decision making.</em></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Duration:</h5>
+                            <p class="card-text"><em>Typically ranges from 2 to 3 months, depending on the course intensity and format.</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Certification:</h5>
+                            <p class="card-text"><em>Earn a certificate of completion that can be added to your resume or LinkedIn profile.</em></p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>© 2024 Sri Institution. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

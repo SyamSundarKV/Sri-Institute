@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programming</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="python.png">
+</head>
+
+<style>
+    /* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    animation: fadeInDown 1.2s ease;
+}
+
+
+
+.register-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    animation: bounceIn 1.5s;
+}
+
+.roadmap-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+  
+}
+
+.roadmap-section h2 {
+    font-weight: 700;
+    color: #6a11cb;
+    margin-bottom: 40px;
+    animation: fadeIn 1.2s;
+}
+
+.roadmap-card {
+    border: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border-radius: 20px;
+   
+}
+
+.roadmap-card:hover {
+    transform: translateY(-10px);
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--kappel);
+}
+  
+.nav__logo div {
+    width: 60px;
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center;
+    font-size: 35px;
+    line-height: 1rem;
+    color: blue;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2575fc;
+}
+
+.number div {
+    width: 30px;
+    aspect-ratio: 1;
+    display: grid;
+    place-content: center;
+    font-size: 25px;
+    line-height: 1rem;
+    color: white;
+    background-color: #2575fc;
+    border-radius: 100%;
+}
+
+
+
+
+.roadmap-card .card-title {
+    color: #2575fc;
+    font-weight: bold;
+}
+
+.footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    .register-btn {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+    from, 20%, 40%, 60%, 80%, to { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+</style>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="nav__logo">
+            <div>SRI</div>
+            Institution
+        </div>
+        <div class="container text-center">
+            <h1 class="display-4">Python Programming Roadmap</h1>
+           <a href="#"><button class="btn btn-primary register-btn">Register for the Course</button></a> 
+        </div>
+    </header>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap-section">
+        <div class="container">
+            <h2 class="text-center mb-4">Key Concepts in Python Programming</h2>
+            <div class="row">
+                <div class="col-lg-12 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Course Objective:</h5>
+                            <ul>
+                                <li><em>Learn the fundamentals of the Python programming language.</em></li>
+                                <li><em>Understand basic and advanced programming concepts.</em></li>
+                                <li><em>Develop skills to write efficient and scalable Python code.</em></li>
+                                <li><em>Gain proficiency in using Python for various applications, including web development, data analysis, and automation.</em></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                            <p class="card-text"> 
+                                 <div class="number">
+                                    <div>1</div>
+                                    Introduction to Python:
+                                 </div>
+                            </p>
+                            </h5>
+                            <ul>
+                                <li>History and features of Python .</li>
+                                <li>Setting up the development environment.</li>
+                                <li>Basic syntax and structure of Python  programs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                            <p class="card-text">
+                                <div class="number">
+                                    <div>2</div>
+                                    Data Types and Variables:
+                                </div>    
+                            </p>
+                        </h5>
+                            <ul>
+                                <li>Fundamental data types (int, float, str, list, dict, etc.).</li>
+                                <li>Declaring and initializing variables.</li>
+                                <li>Type conversion and casting.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                            <p class="card-text">
+                                <div class="number">
+                                    <div>3</div>
+                                    Control Structures:
+                                </div>    
+                            </p>
+                        </h5>
+                            <ul>
+                                <li>Conditional statements (if, elif, else).</li>
+                                <li>Looping constructs (for, while, do-while).</li>
+                                <li>Comprehensions and generators.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p class="card-text">
+                                    <div class="number">
+                                        <div>4</div>
+                                        Functions and Modules:
+                                    </div>    
+                                </p>
+                            </h5>
+                            <ul>
+                                <li>Defining and calling functions.</li>
+                                <li>Lambda functions and higher-order functions.</li>
+                                <li>Creating and using modules and packages.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p class="card-text">
+                                    <div class="number">
+                                        <div>5</div>
+                                        Object-Oriented Programming:
+                                    </div>    
+                                </p>
+                            </h5>
+                            <ul>
+                                <li>Classes and objects.</li>
+                                <li>Inheritance, polymorphism, and encapsulation.</li>
+                                <li>Special methods and properties.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                             <h5 class="card-title">
+                                <p class="card-text">
+                                    <div class="number">
+                                        <div>6</div>
+                                        File Handling:
+                                    </div>    
+                                </p>
+                            </h5>
+                            <ul>
+                                <li>Reading from and writing to files.</li>
+                                <li>Working with different file formats (text, CSV, JSON).</li>
+                                <li>Context managers and file operations.</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p class="card-text">
+                                    <div class="number">
+                                        <div>7</div>
+                                        Exception Handling:
+                                    </div>    
+                                </p>
+                            </h5>
+                            <ul>
+                                <li>Handling errors and exceptions.</li>
+                                <li>Try, except, else, and finally blocks.</li>
+                                <li>Creating custom exceptions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p class="card-text">
+                                    <div class="number">
+                                        <div>8</div>
+                                        Libraries and Frameworks:
+                                    </div>    
+                                </p>
+                            </h5>
+                            <ul>
+                                <li>Popular Python libraries (NumPy, Pandas, Matplotlib).</li>
+                                <li>Web frameworks (Django, Flask).</li>  
+                                <li>Automation tools (Selenium, Beautiful Soup).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p class="card-text">
+                                    <div class="number">
+                                        <div>9</div>
+                                        Data Analysis and Visualization:
+                                    </div>    
+                                </p>
+                            </h5>
+                            <ul>
+                                <li>Working with data using Pandas.</li>
+                                <li>Visualizing data with Matplotlib and Seaborn.</li>
+                                <li>Performing data analysis and generating reports.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <p class="card-text">
+                                    <div class="number">
+                                        <div>10</div>
+                                        Project Work:
+                                    </div>    
+                                </p>
+                            </h5>
+                            <ul>
+                                <li>Hands-on projects to apply learned concepts.</li>
+                                <li>Developing real-world applications.</li>
+                                <li>Testing and debugging code.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Skills You'll Gain:</h5>
+                            <ul>
+                                <li><em>Proficiency in Python programming language.</em></li>
+                                <li><em>Understanding of both basic and advanced programming concepts.</em></li>
+                                <li><em>Ability to build and deploy Python applications.</em></li>
+                                <li><em>Experience with data analysis and visualization.</em></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Duration:</h5>
+                            <p class="card-text"><em>Typically ranges from 4 to 7 weeks, depending on the course intensity and format.</em></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-6 mb-4">
+                    <div class="card roadmap-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Certification:</h5>
+                            <p class="card-text"><em>Earn a certificate of completion that can be added to your resume or LinkedIn profile.</em></p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>© 2024 Sri Institution. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
